@@ -1,0 +1,7 @@
+.venv
+.cache
+__pycache__
+*.pyc
+*.pyd
+*.tar
+9G7B_MHA/

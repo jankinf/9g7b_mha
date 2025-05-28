@@ -1,0 +1,7 @@
+transformers==4.44.0
+datamodel-code-generator
+accelerate
+jsonschema
+pytrie
+sentencepiece
+protobuf
