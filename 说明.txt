@@ -1,0 +1,11 @@
+1. 算法运行需要在根目录进行，运行命令如下：
+python SourceCode/infer.py --config_file SourceCode/config.json
+
+2. config.json要求
+scriptPath为算法可执行文件的相对目录
+modelPath、inputPath、outputPath均为文件夹路径，如果modelPath要指定文件名路径，需要在算法内指定
+outputPath、inputPath路径下不能生成新的文件夹
+
+3. docker运行的命令（在根目录运行）：
+docker run --rm --gpus all --name 9g7b -w /app/algorithm -v ./:/app/algorithm --privileged=true 9g7b:v1 python SourceCode/infer.py --config_file SourceCode/config.json
+docker run --rm --gpus '"device=1"' --name 9g7b -w /app/algorithm -v ./:/app/algorithm --privileged=true 9g7b:v1 python SourceCode/infer.py --config_file SourceCode/config.json

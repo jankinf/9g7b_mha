@@ -1,0 +1,11 @@
+{
+    "testId": "0001",
+    "simulation": {},
+    "dataSet": {},
+    "system": {
+        "scriptPath": "SourceCode/infer.py",
+        "modelPath": "Model",
+        "inputPath": "DataSet",
+        "outputPath": "Output"
+    }
+}
