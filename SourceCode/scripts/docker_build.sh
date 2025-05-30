@@ -1,1 +1,0 @@
-docker build --network=host -t 9g7b:v1 . 
